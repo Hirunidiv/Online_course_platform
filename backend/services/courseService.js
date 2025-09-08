@@ -6,7 +6,7 @@ exports.createCourse = async (data) => {
 };
 
 exports.getCourseById = async (id) => {
-  return prisma.course.findUnique({ where: { id } });
+  return prisma.course.findUnique({ where: { id: Number(id) } });
 };
 
 exports.getAllCourses = async () => {
