@@ -6,7 +6,7 @@ exports.createNotification = async (data) => {
 };
 
 exports.getNotificationById = async (id) => {
-  return prisma.notification.findUnique({ where: { id } });
+  return prisma.notification.findUnique({ where: { id: Number(id) } });
 };
 
 exports.getAllNotifications = async () => {

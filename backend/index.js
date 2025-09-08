@@ -22,7 +22,7 @@ app.use('/api/submissions', require('./routes/submissionRoutes')); //done
 app.use('/api/quizzes', require('./routes/quizRoutes')); //done
 app.use('/api/forums', require('./routes/forumRoutes')); //done
 app.use('/api/messages', require('./routes/messageRoutes')); //done
-app.use('/api/notifications', require('./routes/notificationRoutes'));
+app.use('/api/notifications', require('./routes/notificationRoutes')); //done
 app.use('/api/payments', require('./routes/paymentRoutes'));
 app.use('/api/certificates', require('./routes/certificateRoutes'));
 app.use('/api/profiles', require('./routes/profileRoutes'));
