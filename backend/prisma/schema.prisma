@@ -58,8 +58,8 @@ model Content {
   url       String?
   course    Course   @relation(fields: [courseId], references: [id])
   courseId  Int
-  quiz      Quiz?
-  assignment Assignment?
+  quiz      Quiz? //bolean value
+  assignment Assignment? //bolean value
 }
 
 model Quiz {

@@ -6,7 +6,7 @@ exports.createContent = async (data) => {
 };
 
 exports.getContentById = async (id) => {
-  return prisma.content.findUnique({ where: { id } });
+  return prisma.content.findUnique({ where: { id: Number(id) } });
 };
 
 exports.getAllContents = async () => {

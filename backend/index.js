@@ -15,8 +15,8 @@ app.use(express.json());
 // Route imports
 app.use('/api/users', require('./routes/userRoutes')); //done
 app.use('/api/courses', require('./routes/courseRoutes')); //done
-app.use('/api/enrollments', require('./routes/enrollmentRoutes'));
-app.use('/api/contents', require('./routes/contentRoutes'));
+app.use('/api/enrollments', require('./routes/enrollmentRoutes'));//done
+app.use('/api/contents', require('./routes/contentRoutes'));//done
 app.use('/api/assignments', require('./routes/assignmentRoutes'));
 app.use('/api/submissions', require('./routes/submissionRoutes'));
 app.use('/api/quizzes', require('./routes/quizRoutes'));
