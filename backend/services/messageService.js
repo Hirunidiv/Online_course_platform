@@ -6,7 +6,7 @@ exports.createMessage = async (data) => {
 };
 
 exports.getMessageById = async (id) => {
-  return prisma.message.findUnique({ where: { id } });
+  return prisma.message.findUnique({ where: { id: Number(id) } });
 };
 
 exports.getAllMessages = async () => {

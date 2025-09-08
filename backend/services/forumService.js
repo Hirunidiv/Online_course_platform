@@ -6,7 +6,7 @@ exports.createForum = async (data) => {
 };
 
 exports.getForumById = async (id) => {
-  return prisma.forum.findUnique({ where: { id } });
+  return prisma.forum.findUnique({ where: { id: Number(id) } });
 };
 
 exports.getAllForums = async () => {

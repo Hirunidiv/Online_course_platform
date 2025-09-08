@@ -6,7 +6,7 @@ exports.createQuiz = async (data) => {
 };
 
 exports.getQuizById = async (id) => {
-  return prisma.quiz.findUnique({ where: { id } });
+  return prisma.quiz.findUnique({ where: { id: Number(id) } });
 };
 
 exports.getAllQuizzes = async () => {

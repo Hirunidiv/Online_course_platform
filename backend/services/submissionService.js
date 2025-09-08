@@ -6,7 +6,7 @@ exports.createSubmission = async (data) => {
 };
 
 exports.getSubmissionById = async (id) => {
-  return prisma.submission.findUnique({ where: { id } });
+  return prisma.submission.findUnique({ where: { id: Number(id) } });
 };
 
 exports.getAllSubmissions = async () => {

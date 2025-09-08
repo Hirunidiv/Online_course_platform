@@ -6,7 +6,7 @@ exports.createAssignment = async (data) => {
 };
 
 exports.getAssignmentById = async (id) => {
-  return prisma.assignment.findUnique({ where: { id } });
+  return prisma.assignment.findUnique({ where: { id: Number(id) } });
 };
 
 exports.getAllAssignments = async () => {
