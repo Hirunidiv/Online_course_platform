@@ -6,7 +6,7 @@ exports.createCertificate = async (data) => {
 };
 
 exports.getCertificateById = async (id) => {
-  return prisma.certificate.findUnique({ where: { id } });
+  return prisma.certificate.findUnique({ where: { id: Number(id) } });
 };
 
 exports.getAllCertificates = async () => {

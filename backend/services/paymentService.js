@@ -6,7 +6,7 @@ exports.createPayment = async (data) => {
 };
 
 exports.getPaymentById = async (id) => {
-  return prisma.payment.findUnique({ where: { id } });
+  return prisma.payment.findUnique({ where: { id: Number(id) } });
 };
 
 exports.getAllPayments = async () => {
